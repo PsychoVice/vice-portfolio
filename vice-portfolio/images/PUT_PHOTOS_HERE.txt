@@ -1,0 +1,1 @@
+Place your own photos in this folder. Expected names: hero.jpg, concert.jpg, portraits.jpg.
