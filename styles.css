@@ -17,13 +17,18 @@
 .masthead-banner:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.12;background-image:radial-gradient(#6b5b50 .65px,transparent .65px);background-size:4px 4px;z-index:0}
 .marquee-row{position:absolute;left:0;width:100%;overflow:hidden;white-space:nowrap;font-family:var(--display);font-size:clamp(54px,8.2vw,116px);font-weight:600;line-height:.95;letter-spacing:.005em;color:#8b1028;z-index:1}
 .marquee-one{top:12%}.marquee-two{top:39%}.marquee-three{top:66%}
-.marquee-track{display:flex;width:max-content;animation:vice-marquee 30s linear infinite}
-.marquee-two .marquee-track{animation-name:vice-marquee-reverse;animation-duration:34s}
-.marquee-three .marquee-track{animation-duration:27s}
+.marquee-track{display:flex;width:max-content;animation:vice-marquee-right 30s linear infinite}
+.marquee-two .marquee-track{animation-name:vice-marquee-left;animation-duration:34s}
+.marquee-three .marquee-track{animation-name:vice-marquee-right;animation-duration:27s}
 .marquee-track span{flex:none;padding-right:.1em}
 .masthead-portrait{position:absolute;z-index:3;left:50%;bottom:0;transform:translateX(-50%);height:98%;width:auto;max-width:56%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 1px 0 rgba(0,0,0,.08));pointer-events:none}
+.masthead-star{position:absolute;z-index:2;width:clamp(30px,4.8vw,66px);height:auto;object-fit:contain;opacity:.9;pointer-events:none}
+.masthead-star-left{left:17%;top:31%;transform:rotate(-13deg)}
+.masthead-star-left-small{left:27%;top:67%;width:clamp(19px,2.7vw,38px);transform:rotate(12deg)}
+.masthead-star-right{right:17%;top:29%;transform:rotate(15deg)}
+.masthead-star-right-small{right:27%;top:65%;width:clamp(19px,2.7vw,38px);transform:rotate(-10deg)}
 .masthead-signature{position:absolute;z-index:4;left:2.2%;right:2.2%;bottom:14px;display:flex;justify-content:space-between;font-size:8px;font-weight:800;letter-spacing:.18em;color:rgba(30,22,22,.68);pointer-events:none}
-@keyframes vice-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@keyframes vice-marquee-reverse{from{transform:translateX(-50%)}to{transform:translateX(0)}}
-@media(max-width:700px){.masthead-banner{height:390px;min-height:390px;border-width:6px}.marquee-row{font-size:clamp(48px,12vw,76px)}.marquee-one{top:15%}.marquee-two{top:42%}.marquee-three{top:69%}.masthead-portrait{height:86%;max-width:82%}.masthead-signature{font-size:7px;bottom:10px}}
+@keyframes vice-marquee-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes vice-marquee-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:700px){.masthead-banner{height:390px;min-height:390px;border-width:6px}.marquee-row{font-size:clamp(48px,12vw,76px)}.marquee-one{top:15%}.marquee-two{top:42%}.marquee-three{top:69%}.masthead-portrait{height:86%;max-width:82%}.masthead-star-left{left:7%;top:34%}.masthead-star-left-small{left:17%;top:69%}.masthead-star-right{right:7%;top:33%}.masthead-star-right-small{right:17%;top:68%}.masthead-signature{font-size:7px;bottom:10px}}
 @media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
