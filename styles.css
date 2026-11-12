@@ -117,3 +117,19 @@
  .site-header.is-scrolled a.wordmark{height:58px!important}
  .site-header.is-scrolled a.wordmark img.site-logo{height:44px!important;max-height:44px!important}
 }
+
+
+/* Stronger scroll-state logo size so the change is clearly visible */
+.site-header.is-scrolled{height:100px!important;padding:0 24px!important}
+.site-header.is-scrolled a.wordmark{height:88px!important}
+.site-header.is-scrolled a.wordmark img.site-logo{height:78px!important;max-height:78px!important;max-width:min(420px,78vw)!important}
+@media(max-width:800px){
+ .site-header.is-scrolled{height:90px!important}
+ .site-header.is-scrolled a.wordmark{height:80px!important}
+ .site-header.is-scrolled a.wordmark img.site-logo{height:68px!important;max-height:68px!important;max-width:82vw!important}
+}
+@media(max-width:560px){
+ .site-header.is-scrolled{height:82px!important}
+ .site-header.is-scrolled a.wordmark{height:72px!important}
+ .site-header.is-scrolled a.wordmark img.site-logo{height:60px!important;max-height:60px!important;max-width:84vw!important}
+}
