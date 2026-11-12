@@ -46,3 +46,19 @@
   .site-header .site-logo{height:39px;max-width:155px}
   .site-header.is-scrolled .site-logo{height:27px}
 }
+
+/* Hard bounds for the header logo: keep the artwork inside the navigation bar. */
+.site-header a.wordmark{display:flex;align-items:center;justify-content:flex-start;width:150px;height:54px;min-width:0;overflow:hidden;flex:0 0 150px}
+.site-header a.wordmark img.site-logo{display:block!important;width:100%!important;height:42px!important;max-width:150px!important;max-height:42px!important;min-width:0;object-fit:contain!important;object-position:left center;flex:none}
+.site-header.is-scrolled a.wordmark{height:42px}
+.site-header.is-scrolled a.wordmark img.site-logo{height:30px!important;max-height:30px!important}
+@media(max-width:800px){
+ .site-header a.wordmark{width:132px;height:48px;flex-basis:132px}
+ .site-header a.wordmark img.site-logo{height:37px!important;max-width:132px!important;max-height:37px!important}
+ .site-header.is-scrolled a.wordmark img.site-logo{height:27px!important;max-height:27px!important}
+}
+@media(max-width:560px){
+ .site-header a.wordmark{width:112px;height:44px;flex-basis:112px}
+ .site-header a.wordmark img.site-logo{height:34px!important;max-width:112px!important;max-height:34px!important}
+ .site-header.is-scrolled a.wordmark img.site-logo{height:25px!important;max-height:25px!important}
+}
