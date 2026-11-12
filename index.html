@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261112-6">
+  <link rel="stylesheet" href="styles.css?v=20261112-7">
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -30,8 +30,10 @@
 
   <main id="top">
     <section class="hero">
-      <div class="hero-image" role="img" aria-label="Место для главной концертной фотографии">
-        <div class="hero-image-note">ЗДЕСЬ БУДЕТ ТВОЙ ГЛАВНЫЙ КАДР</div>
+      <div class="hero-image" aria-hidden="true">
+        <video class="hero-background-video" autoplay muted loop playsinline preload="auto">
+          <source src="images/VICE_camera_aperture_1920x540_60fps%20(online-video-cutter.com).mp4" type="video/mp4">
+        </video>
       </div>
       <div class="hero-shade"></div>
       <div class="hero-content">
@@ -45,12 +47,6 @@
       <div class="hero-index">01 <span>/</span> 04</div>
       <div class="hero-side-label">VICE — VISUAL STORIES</div>
     </section>
-
-    <section class="aperture-film" aria-label="Анимация объектива VICE">
-    <video class="aperture-film-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-      <source src="images/VICE_camera_aperture_1920x540_60fps%20(online-video-cutter.com).mp4" type="video/mp4">
-    </video>
-  </section>
 
   <section class="intro section-wrap" id="about">
       <div class="section-kicker"><span>01</span> / ПОДХОД</div>
