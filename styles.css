@@ -85,3 +85,19 @@
  .site-header.is-scrolled{height:54px!important}
  .site-header.is-scrolled a.wordmark img.site-logo{height:25px!important;max-height:25px!important}
 }
+
+
+/* Larger centered VICE logo — compact size remains unchanged after scrolling */
+.site-header{height:136px!important}
+.site-header a.wordmark{height:112px!important}
+.site-header a.wordmark img.site-logo{height:100px!important;max-height:100px!important;max-width:min(420px,78vw)!important}
+@media(max-width:800px){
+ .site-header{height:116px!important}
+ .site-header a.wordmark{height:98px!important}
+ .site-header a.wordmark img.site-logo{height:84px!important;max-height:84px!important;max-width:82vw!important}
+}
+@media(max-width:560px){
+ .site-header{height:102px!important}
+ .site-header a.wordmark{height:88px!important}
+ .site-header a.wordmark img.site-logo{height:70px!important;max-height:70px!important;max-width:84vw!important}
+}
