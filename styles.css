@@ -62,3 +62,26 @@
  .site-header a.wordmark img.site-logo{height:34px!important;max-width:112px!important;max-height:34px!important}
  .site-header.is-scrolled a.wordmark img.site-logo{height:25px!important;max-height:25px!important}
 }
+
+
+/* Centered VICE header: large at the top, compact on scroll */
+.site-header{height:112px!important;padding:0 24px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+.site-header a.wordmark{display:flex!important;align-items:center!important;justify-content:center!important;width:auto!important;height:88px!important;min-width:0!important;flex:0 0 auto!important;overflow:visible!important;margin:0 auto!important}
+.site-header a.wordmark img.site-logo{display:block!important;width:auto!important;height:76px!important;max-width:min(340px,70vw)!important;max-height:76px!important;object-fit:contain!important;object-position:center!important;flex:none!important;transition:height .32s ease,max-height .32s ease!important}
+.site-header.is-scrolled{height:62px!important;padding:0 24px!important}
+.site-header.is-scrolled a.wordmark{height:48px!important}
+.site-header.is-scrolled a.wordmark img.site-logo{height:30px!important;max-height:30px!important}
+@media(max-width:800px){
+ .site-header{height:94px!important}
+ .site-header a.wordmark{height:76px!important}
+ .site-header a.wordmark img.site-logo{height:64px!important;max-width:75vw!important;max-height:64px!important}
+ .site-header.is-scrolled{height:58px!important}
+ .site-header.is-scrolled a.wordmark img.site-logo{height:27px!important;max-height:27px!important}
+}
+@media(max-width:560px){
+ .site-header{height:82px!important}
+ .site-header a.wordmark{height:68px!important}
+ .site-header a.wordmark img.site-logo{height:56px!important;max-width:78vw!important;max-height:56px!important}
+ .site-header.is-scrolled{height:54px!important}
+ .site-header.is-scrolled a.wordmark img.site-logo{height:25px!important;max-height:25px!important}
+}
