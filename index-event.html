@@ -17,10 +17,14 @@
     .event-title{margin:20px 0;font:500 clamp(58px,10vw,132px)/.95 var(--display);text-transform:uppercase}
     
     .event-meta{display:flex;gap:30px;flex-wrap:wrap;margin-top:42px;padding:20px 0;border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16);color:#aaa5a2;font-size:9px;letter-spacing:.16em}
-    .event-gallery{margin-top:55px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-    .event-photo{min-height:300px;background:#171719;border:1px solid rgba(139,16,40,.45);display:flex;align-items:center;justify-content:center;color:#6f6969;font-size:10px;letter-spacing:.14em}
+    .event-gallery{margin-top:58px;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);align-items:start;gap:24px;max-width:1500px;margin-left:auto;margin-right:auto}
+    .event-photo{display:block;width:100%;height:auto;object-fit:contain;background:#141416;transition:transform .5s ease,filter .5s ease}
+    .event-photo-wrap{overflow:hidden;background:#141416;line-height:0}
+    .event-photo-wrap:nth-child(3){margin-top:42px}
+    .event-photo-wrap:nth-child(4){margin-top:42px}
+    .event-photo-wrap:hover .event-photo{transform:scale(1.015);filter:brightness(1.06)}
     .event-footer{margin:0 8vw 30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;color:#aaa5a2;font-size:9px;letter-spacing:.14em}
-    @media(max-width:650px){.event-page{padding:8vw 7vw 15vw}.event-kicker{margin-top:75px}.event-gallery{grid-template-columns:1fr}.event-photo{min-height:230px}.event-footer{margin-left:7vw;margin-right:7vw}}
+    @media(max-width:650px){.event-page{padding:8vw 7vw 15vw}.event-kicker{margin-top:75px}.event-gallery{grid-template-columns:1fr;gap:16px}.event-photo-wrap:nth-child(3),.event-photo-wrap:nth-child(4){margin-top:0}.event-footer{margin-left:7vw;margin-right:7vw}}
   </style>
 </head>
 <body>
@@ -35,8 +39,10 @@
     
     <div class="event-meta"><span>VICE — PHOTOGRAPHY</span><span>LIVE / EVENT</span></div>
     <section class="event-gallery" aria-label="Фотографии INDEX">
-      <div class="event-photo">ФОТОГРАФИИ ПРОЕКТА</div>
-      <div class="event-photo">ФОТОГРАФИИ ПРОЕКТА</div>
+      <div class="event-photo-wrap"><img class="event-photo" src="images/projects/concerts/INDEX/DFF%20index%20001.png" alt="INDEX — концертная фотография 1" loading="lazy"></div>
+      <div class="event-photo-wrap"><img class="event-photo" src="images/projects/concerts/INDEX/DFF%20index%20002.png" alt="INDEX — концертная фотография 2" loading="lazy"></div>
+      <div class="event-photo-wrap"><img class="event-photo" src="images/projects/concerts/INDEX/DFF%20index%20003.png" alt="INDEX — концертная фотография 3" loading="lazy"></div>
+      <div class="event-photo-wrap"><img class="event-photo" src="images/projects/concerts/INDEX/DFF%20index%20004.png" alt="INDEX — концертная фотография 4" loading="lazy"></div>
     </section>
   </main>
   <footer class="event-footer"><a href="index.html">VICE.</a><a href="concerts.html">← К КОНЦЕРТАМ</a></footer>
