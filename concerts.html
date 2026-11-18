@@ -4,24 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101012">
-  <meta name="description" content="VICE — концертные съёмки.">
+  <meta name="description" content="VICE — концертные проекты и live-фотография.">
   <title>VICE — Концертные съёмки</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261118-8">
+  <link rel="stylesheet" href="styles.css?v=20261118-10">
   <style>
     .case-page{min-height:calc(100svh - 86px);padding:7vw 8vw 8vw}
     .case-back{display:inline-flex;align-items:center;gap:14px;color:#aaa5a2;font-size:10px;font-weight:800;letter-spacing:.14em;transition:color .2s}
     .case-back:hover{color:#fff}
-    .case-kicker{margin-top:105px;color:#bd5267;font-size:10px;font-weight:800;letter-spacing:.2em}
+    .case-kicker{margin-top:90px;color:#bd5267;font-size:10px;font-weight:800;letter-spacing:.2em}
     .case-title{margin:22px 0 18px;font:500 clamp(54px,10vw,130px)/.95 var(--display);letter-spacing:-.025em;text-transform:uppercase}
     .case-description{max-width:560px;color:#aaa5a2;font-size:13px;line-height:1.9}
-    .case-meta{display:flex;gap:35px;margin-top:48px;padding:20px 0;border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16);color:#aaa5a2;font-size:9px;letter-spacing:.16em;text-transform:uppercase}
-    .case-gallery{margin-top:58px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .case-placeholder{min-height:300px;border:1px solid rgba(139,16,40,.65);background:linear-gradient(135deg,rgba(139,16,40,.10),rgba(255,255,255,.015));display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;color:#777;font-size:10px;letter-spacing:.16em}
+    .concert-projects{margin-top:55px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+    .concert-project{display:block;min-width:0}
+    .concert-poster{width:100%;aspect-ratio:4/5;overflow:hidden;background:#171719;border:1px solid rgba(139,16,40,.55)}
+    .concert-poster img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .55s ease,opacity .3s ease}
+    .concert-project:hover .concert-poster img{transform:scale(1.035);opacity:.88}
+    .concert-project-title{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:20px}
+    .concert-project-title h2{margin:0;font:500 clamp(30px,4vw,52px)/1.05 var(--display);text-transform:uppercase}
+    .concert-project-title span{color:#bd5267;font-size:24px;transition:transform .25s}
+    .concert-project:hover .concert-project-title span{transform:translate(4px,-4px)}
+    .concert-project p{margin:10px 0 0;color:#aaa5a2;font-size:10px;letter-spacing:.12em}
     .case-footer{margin:0 8vw 30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:center;color:#aaa5a2;font-size:9px;letter-spacing:.14em}
-    @media(max-width:600px){.case-page{padding:8vw 7vw 16vw}.case-kicker{margin-top:85px}.case-meta{gap:16px;flex-wrap:wrap}.case-gallery{grid-template-columns:1fr}.case-placeholder{min-height:230px}.case-footer{margin-left:7vw;margin-right:7vw}}
+    @media(max-width:650px){.case-page{padding:8vw 7vw 16vw}.case-kicker{margin-top:75px}.concert-projects{grid-template-columns:1fr;gap:42px}.concert-project-title h2{font-size:38px}.case-footer{margin-left:7vw;margin-right:7vw}}
   </style>
 </head>
 <body>
@@ -35,10 +42,17 @@
     <div class="case-kicker">01 / LIVE PHOTOGRAPHY</div>
     <h1 class="case-title">Концертные съёмки</h1>
     <p class="case-description">Свет сцены, движение, энергия выступления и моменты, которые существуют только здесь и сейчас.</p>
-    <div class="case-meta"><span>VICE — PHOTOGRAPHY</span><span>LIVE / MUSIC</span></div>
-    <section class="case-gallery" aria-label="Фотографии проекта">
-      <div class="case-placeholder">ФОТОГРАФИИ ПРОЕКТА БУДУТ ДОБАВЛЕНЫ</div>
-      <div class="case-placeholder">ФОТОГРАФИИ ПРОЕКТА БУДУТ ДОБАВЛЕНЫ</div>
+    <section class="concert-projects" aria-label="Концертные проекты">
+      <a class="concert-project" href="hallowen-fest.html">
+        <div class="concert-poster"><img src="images/projects/concerts/Hallowen%20fest/%D0%B0%D1%84%D0%B8%D1%88%D0%B0%20hallowen%20fest.webp" alt="Афиша Hallowen Fest"></div>
+        <div class="concert-project-title"><h2>Hallowen Fest</h2><span>↗</span></div>
+        <p>LIVE / FESTIVAL</p>
+      </a>
+      <a class="concert-project" href="index-event.html">
+        <div class="concert-poster"><img src="images/projects/concerts/INDEX/%D0%90%D0%A4%D0%98%D0%A8%D0%90%20%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.jpg" alt="Афиша INDEX"></div>
+        <div class="concert-project-title"><h2>INDEX</h2><span>↗</span></div>
+        <p>LIVE / EVENT</p>
+      </a>
     </section>
   </main>
   <footer class="case-footer"><a class="wordmark" href="index.html">VICE<span>.</span></a><a href="index.html#works">← К ПРОЕКТАМ</a></footer>
