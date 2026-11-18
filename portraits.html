@@ -16,16 +16,21 @@
     .case-back:hover{color:#fff}
     .case-kicker{margin-top:100px;color:#bd5267;font-size:10px;font-weight:800;letter-spacing:.2em}
     .case-title{margin:22px 0 55px;font:500 clamp(54px,10vw,130px)/.95 var(--display);letter-spacing:-.025em;text-transform:uppercase}
-    .shoot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-    .shoot-card{min-height:260px;padding:28px;border:1px solid rgba(255,255,255,.16);background:linear-gradient(145deg,rgba(139,16,40,.15),rgba(255,255,255,.015));display:flex;flex-direction:column;justify-content:space-between;transition:border-color .25s,background .25s}
-    .shoot-card:hover{border-color:#8b1028;background:linear-gradient(145deg,rgba(139,16,40,.25),rgba(255,255,255,.025))}
-    .shoot-number{color:#bd5267;font-size:10px;letter-spacing:.18em}
-    .shoot-name{font:500 clamp(30px,4vw,58px)/1 var(--display);text-transform:uppercase;overflow-wrap:anywhere}
+    .shoot-grid{margin-top:65px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(22px,3vw,44px)}
+    .shoot-card{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:clamp(14px,2vw,26px);min-width:0;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.14);transition:opacity .25s}
+    .shoot-card:hover{opacity:.82}
+    .shoot-cover{width:100%;display:flex;justify-content:center;align-items:center;overflow:hidden;background:#141416}
+    .shoot-cover img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain;transition:transform .35s ease}
+    .shoot-card:hover .shoot-cover img{transform:scale(1.015)}
+    .shoot-copy{min-width:0}
+    .shoot-number{display:block;margin-bottom:18px;color:#bd5267;font-size:10px;letter-spacing:.18em}
+    .shoot-name{display:flex;align-items:center;justify-content:space-between;gap:10px;font:500 clamp(27px,3vw,48px)/1.05 var(--display);text-transform:uppercase;overflow-wrap:anywhere}
+    .shoot-name span{color:#bd5267;font-size:22px;transition:transform .25s}
+    .shoot-card:hover .shoot-name span{transform:translate(4px,-4px)}
     .shoot-card:first-child .shoot-name{text-transform:none}
-    .shoot-arrow{align-self:flex-end;color:#aaa5a2;font-size:24px}
     .case-footer{margin:0 8vw 30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:center;color:#aaa5a2;font-size:9px;letter-spacing:.14em}
-    @media(max-width:850px){.shoot-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:600px){.case-page{padding:8vw 7vw 16vw}.case-kicker{margin-top:85px}.case-title{margin-bottom:38px}.shoot-grid{grid-template-columns:1fr}.shoot-card{min-height:190px}.case-footer{margin-left:7vw;margin-right:7vw}}
+    @media(max-width:900px){.shoot-grid{grid-template-columns:1fr;gap:34px}.shoot-card{grid-template-columns:minmax(160px,280px) minmax(0,1fr);gap:clamp(24px,5vw,55px)}.shoot-cover img{max-height:400px}}
+    @media(max-width:650px){.case-page{padding:8vw 7vw 16vw}.case-kicker{margin-top:75px}.case-title{margin-bottom:38px}.shoot-card{grid-template-columns:minmax(105px,38%) minmax(0,1fr);gap:20px;padding-bottom:30px}.shoot-cover img{max-height:300px}.shoot-name{font-size:clamp(26px,7vw,38px)}.shoot-name span{font-size:19px}.case-footer{margin-left:7vw;margin-right:7vw}}
   </style>
 </head>
 <body>
@@ -38,9 +43,18 @@
     <div class="case-kicker">02 / PERSONAL PHOTOGRAPHY</div>
     <h1 class="case-title">Личные фотосеты</h1>
     <section class="shoot-grid" aria-label="Личные фотосеты">
-      <a class="shoot-card" href="qunowwe.html"><span class="shoot-number">01 / PERSONAL</span><span class="shoot-name">qunowwe</span><span class="shoot-arrow">↗</span></a>
-      <a class="shoot-card" href="santixa.html"><span class="shoot-number">02 / PERSONAL</span><span class="shoot-name">Santixa</span><span class="shoot-arrow">↗</span></a>
-      <a class="shoot-card" href="lizzawwxx.html"><span class="shoot-number">03 / PERSONAL</span><span class="shoot-name">lizzawwxx</span><span class="shoot-arrow">↗</span></a>
+      <a class="shoot-card" href="qunowwe.html">
+        <div class="shoot-cover"><img src="qunowwe%20%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0.png" alt="Обложка фотосета qunowwe"></div>
+        <div class="shoot-copy"><span class="shoot-number">01 / PERSONAL</span><div class="shoot-name">qunowwe <span>↗</span></div></div>
+      </a>
+      <a class="shoot-card" href="santixa.html">
+        <div class="shoot-cover"><img src="images/projects/photoshoots/Santixa/Santixa%20%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0.jpg" alt="Обложка фотосета Santixa"></div>
+        <div class="shoot-copy"><span class="shoot-number">02 / PERSONAL</span><div class="shoot-name">Santixa <span>↗</span></div></div>
+      </a>
+      <a class="shoot-card" href="lizzawwxx.html">
+        <div class="shoot-cover"><img src="images/projects/photoshoots/lizzawwxx/lizzawwxx%20%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0.jpg" alt="Обложка фотосета lizzawwxx"></div>
+        <div class="shoot-copy"><span class="shoot-number">03 / PERSONAL</span><div class="shoot-name">lizzawwxx <span>↗</span></div></div>
+      </a>
     </section>
   </main>
   <footer class="case-footer"><a class="wordmark" href="index.html">VICE<span>.</span></a><a href="index.html#works">← К ПРОЕКТАМ</a></footer>
