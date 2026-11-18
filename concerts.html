@@ -19,16 +19,16 @@
     .case-description{max-width:560px;color:#aaa5a2;font-size:13px;line-height:1.9}
     .concert-projects{margin-top:55px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
     .concert-project{display:block;min-width:0}
-    .concert-poster{width:100%;aspect-ratio:4/5;overflow:hidden;background:#171719;border:1px solid rgba(139,16,40,.55)}
-    .concert-poster img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .55s ease,opacity .3s ease}
-    .concert-project:hover .concert-poster img{transform:scale(1.035);opacity:.88}
+    .concert-poster{width:100%;min-height:0;aspect-ratio:auto;overflow:visible;background:transparent;border:0;display:flex;justify-content:center;align-items:flex-start}
+    .concert-poster img{display:block;width:min(100%,340px);height:auto;max-height:460px;object-fit:contain;transition:transform .35s ease,opacity .3s ease}
+    .concert-project:hover .concert-poster img{transform:scale(1.015);opacity:.88}
     .concert-project-title{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:20px}
     .concert-project-title h2{margin:0;font:500 clamp(30px,4vw,52px)/1.05 var(--display);text-transform:uppercase}
     .concert-project-title span{color:#bd5267;font-size:24px;transition:transform .25s}
     .concert-project:hover .concert-project-title span{transform:translate(4px,-4px)}
     .concert-project p{margin:10px 0 0;color:#aaa5a2;font-size:10px;letter-spacing:.12em}
     .case-footer{margin:0 8vw 30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:center;color:#aaa5a2;font-size:9px;letter-spacing:.14em}
-    @media(max-width:650px){.case-page{padding:8vw 7vw 16vw}.case-kicker{margin-top:75px}.concert-projects{grid-template-columns:1fr;gap:42px}.concert-project-title h2{font-size:38px}.case-footer{margin-left:7vw;margin-right:7vw}}
+    @media(max-width:650px){.case-page{padding:8vw 7vw 16vw}.case-kicker{margin-top:75px}.concert-projects{grid-template-columns:1fr;gap:42px}.concert-poster img{width:min(100%,290px);max-height:420px}.concert-project-title h2{font-size:38px}.case-footer{margin-left:7vw;margin-right:7vw}}
   </style>
 </head>
 <body>
