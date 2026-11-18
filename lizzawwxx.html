@@ -16,13 +16,13 @@
     .event-kicker{margin-top:90px;color:#bd5267;font-size:10px;font-weight:800;letter-spacing:.2em}
     .event-title{margin:20px 0;font:500 clamp(58px,10vw,132px)/.95 var(--display);text-transform:none;overflow-wrap:anywhere}
     .event-meta{display:flex;gap:30px;flex-wrap:wrap;margin-top:42px;padding:20px 0;border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16);color:#aaa5a2;font-size:9px;letter-spacing:.16em}
-    .event-gallery{margin:58px auto 0;max-width:1450px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);grid-template-rows:repeat(3,auto);gap:14px 18px;align-items:stretch}
+    .event-gallery{margin:58px auto 0;max-width:1450px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:14px 18px;align-items:stretch}
     .event-photo-wrap{overflow:hidden;background:#141416;line-height:0;min-width:0;display:flex;align-items:center;justify-content:center}
     .event-photo{display:block;width:100%;height:auto;object-fit:contain;transition:transform .5s ease,filter .5s ease;cursor:zoom-in}
-    .photo-1{grid-column:1;grid-row:1 / span 3}
-    .photo-2{grid-column:2;grid-row:1}
-    .photo-3{grid-column:2;grid-row:2}
-    .photo-4{grid-column:2;grid-row:3}
+    .photo-1{grid-column:2;grid-row:1}
+    .photo-2{grid-column:1;grid-row:1 / span 2}
+    .photo-3{grid-column:3;grid-row:1 / span 2}
+    .photo-4{grid-column:2;grid-row:2}
     .event-photo-wrap:hover .event-photo{transform:scale(1.015);filter:brightness(1.06)}
     .photo-lightbox{width:100vw;height:100vh;max-width:none;max-height:none;padding:5vh 5vw;margin:0;border:0;background:rgba(5,5,7,.94);color:white;overflow:hidden}
     .photo-lightbox[open]{display:flex;align-items:center;justify-content:center}
@@ -34,7 +34,7 @@
       .event-page{padding:8vw 7vw 15vw}
       .event-kicker{margin-top:75px}
       .event-gallery{grid-template-columns:1fr;grid-template-rows:auto;gap:14px}
-      .photo-1,.photo-2,.photo-3,.photo-4{grid-column:auto;grid-row:auto}
+      .photo-1,.photo-2,.photo-3,.photo-4{grid-column:1;grid-row:auto}
       .photo-lightbox{padding:4vh 3vw}
       .photo-lightbox img{max-width:94vw;max-height:88vh}
       .lightbox-close{top:14px;right:14px}
