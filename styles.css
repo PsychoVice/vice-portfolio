@@ -221,6 +221,9 @@
 .project-copy .project-cross{margin:0 0 22px}
 .project-copy h3{font-size:clamp(34px,4.2vw,60px);line-height:1.08}
 .project-copy p{max-width:540px;font-size:10px;line-height:1.7}
+/* Align the right-hand project title with the shared vertical guide */
+.project-portraits .project-copy{margin-left:6.5vw}
+
 .project-banner-placeholder{
   width:100%;
   aspect-ratio:2 / 1;
@@ -242,6 +245,7 @@
   .project-live .project-banner-placeholder{order:1}
   .project-portraits .project-banner-placeholder{order:1}
   .project-portraits .project-copy{order:0}
+  .project-portraits .project-copy{margin-left:0}
   .project-copy .project-cross{margin-bottom:15px}
   .project-copy h3{font-size:clamp(30px,7vw,44px)}
   .project-copy p{font-size:9px}
