@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101012">
+  <meta name="description" content="VICE — фотосет qunowwe.">
+  <title>VICE — qunowwe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261118-11">
+  <style>
+    .event-page{padding:7vw 8vw 9vw;min-height:calc(100svh - 100px)}
+    .event-back{display:inline-flex;color:#aaa5a2;font-size:10px;font-weight:800;letter-spacing:.14em}
+    .event-kicker{margin-top:90px;color:#bd5267;font-size:10px;font-weight:800;letter-spacing:.2em}
+    .event-title{margin:20px 0;font:500 clamp(58px,10vw,132px)/.95 var(--display);text-transform:uppercase;overflow-wrap:anywhere}
+    .event-meta{display:flex;gap:30px;flex-wrap:wrap;margin-top:42px;padding:20px 0;border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16);color:#aaa5a2;font-size:9px;letter-spacing:.16em}
+    .event-gallery{margin:58px auto 0;max-width:1450px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .photo-placeholder{min-height:320px;background:#141416;border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#777;font-size:10px;letter-spacing:.16em;text-align:center;padding:24px}
+    .event-footer{margin:0 8vw 30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;color:#aaa5a2;font-size:9px;letter-spacing:.14em}
+    @media(max-width:650px){.event-page{padding:8vw 7vw 15vw}.event-kicker{margin-top:75px}.event-gallery{grid-template-columns:1fr}.photo-placeholder{min-height:230px}.event-footer{margin-left:7vw;margin-right:7vw}}
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="VICE — на главную"><img class="site-logo" src="images/%D0%BB%D0%BE%D0%B3%D0%BE%20%D0%B1%D0%B5%D0%B7%20%D1%84%D0%BE%D0%BD%D0%B0.png" alt="VICE"></a>
+  </header>
+  <main class="event-page">
+    <a class="event-back" href="portraits.html">← НАЗАД К ЛИЧНЫМ ФОТОСЕТАМ</a>
+    <div class="event-kicker">PERSONAL PHOTOGRAPHY / 01</div>
+    <h1 class="event-title">qunowwe</h1>
+    <div class="event-meta"><span>VICE — PHOTOGRAPHY</span><span>PERSONAL / PORTRAIT</span></div>
+    <section class="event-gallery" aria-label="Фотографии qunowwe">
+      <div class="photo-placeholder">ФОТОГРАФИИ БУДУТ ДОБАВЛЕНЫ</div>
+      <div class="photo-placeholder">ФОТОГРАФИИ БУДУТ ДОБАВЛЕНЫ</div>
+    </section>
+  </main>
+  <footer class="event-footer"><a href="index.html">VICE.</a><a href="portraits.html">← К ЛИЧНЫМ ФОТОСЕТАМ</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
