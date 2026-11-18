@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101012">
+  <meta name="description" content="VICE — личные фотосеты.">
+  <title>VICE — Личные фотосеты</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261118-8">
+  <style>
+    .case-page{min-height:calc(100svh - 86px);padding:7vw 8vw 8vw}
+    .case-back{display:inline-flex;align-items:center;gap:14px;color:#aaa5a2;font-size:10px;font-weight:800;letter-spacing:.14em;transition:color .2s}
+    .case-back:hover{color:#fff}
+    .case-kicker{margin-top:105px;color:#bd5267;font-size:10px;font-weight:800;letter-spacing:.2em}
+    .case-title{margin:22px 0 18px;font:500 clamp(54px,10vw,130px)/.95 var(--display);letter-spacing:-.025em;text-transform:uppercase}
+    .case-description{max-width:560px;color:#aaa5a2;font-size:13px;line-height:1.9}
+    .case-meta{display:flex;gap:35px;margin-top:48px;padding:20px 0;border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16);color:#aaa5a2;font-size:9px;letter-spacing:.16em;text-transform:uppercase}
+    .case-gallery{margin-top:58px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .case-placeholder{min-height:300px;border:1px solid rgba(139,16,40,.65);background:linear-gradient(135deg,rgba(139,16,40,.10),rgba(255,255,255,.015));display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;color:#777;font-size:10px;letter-spacing:.16em}
+    .case-footer{margin:0 8vw 30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:center;color:#aaa5a2;font-size:9px;letter-spacing:.14em}
+    @media(max-width:600px){.case-page{padding:8vw 7vw 16vw}.case-kicker{margin-top:85px}.case-meta{gap:16px;flex-wrap:wrap}.case-gallery{grid-template-columns:1fr}.case-placeholder{min-height:230px}.case-footer{margin-left:7vw;margin-right:7vw}}
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">VICE<span>.</span></a>
+    <a class="header-cta" href="index.html#works">ВСЕ ПРОЕКТЫ <span>↗</span></a>
+  </header>
+  <main class="case-page">
+    <a class="case-back" href="index.html#works">← НАЗАД К ПРОЕКТАМ</a>
+    <div class="case-kicker">02 / PERSONAL PHOTOGRAPHY</div>
+    <h1 class="case-title">Личные фотосеты</h1>
+    <p class="case-description">Портреты вне сцены — характер, настроение и живые истории людей.</p>
+    <div class="case-meta"><span>VICE — PHOTOGRAPHY</span><span>PORTRAITS / PERSONAL</span></div>
+    <section class="case-gallery" aria-label="Фотографии проекта">
+      <div class="case-placeholder">ФОТОГРАФИИ ПРОЕКТА БУДУТ ДОБАВЛЕНЫ</div>
+      <div class="case-placeholder">ФОТОГРАФИИ ПРОЕКТА БУДУТ ДОБАВЛЕНЫ</div>
+    </section>
+  </main>
+  <footer class="case-footer"><a class="wordmark" href="index.html">VICE<span>.</span></a><a href="index.html#works">← К ПРОЕКТАМ</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
