@@ -19,8 +19,8 @@
     .shoot-grid{margin-top:65px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(22px,3vw,44px)}
     .shoot-card{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:clamp(14px,2vw,26px);min-width:0;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.14);transition:opacity .25s}
     .shoot-card:hover{opacity:.82}
-    .shoot-cover{width:100%;display:flex;justify-content:center;align-items:center;overflow:hidden;background:#141416}
-    .shoot-cover img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain;transition:transform .35s ease}
+    .shoot-cover{width:100%;height:340px;display:flex;justify-content:center;align-items:center;overflow:hidden;background:#141416}
+    .shoot-cover img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .35s ease}
     .shoot-card:hover .shoot-cover img{transform:scale(1.015)}
     .shoot-copy{min-width:0}
     .shoot-number{display:block;margin-bottom:18px;color:#bd5267;font-size:10px;letter-spacing:.18em}
@@ -29,8 +29,8 @@
     .shoot-card:hover .shoot-name span{transform:translate(4px,-4px)}
     .shoot-card:first-child .shoot-name{text-transform:none}
     .case-footer{margin:0 8vw 30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:center;color:#aaa5a2;font-size:9px;letter-spacing:.14em}
-    @media(max-width:900px){.shoot-grid{grid-template-columns:1fr;gap:34px}.shoot-card{grid-template-columns:minmax(160px,280px) minmax(0,1fr);gap:clamp(24px,5vw,55px)}.shoot-cover img{max-height:400px}}
-    @media(max-width:650px){.case-page{padding:8vw 7vw 16vw}.case-kicker{margin-top:75px}.case-title{margin-bottom:38px}.shoot-card{grid-template-columns:minmax(105px,38%) minmax(0,1fr);gap:20px;padding-bottom:30px}.shoot-cover img{max-height:300px}.shoot-name{font-size:clamp(26px,7vw,38px)}.shoot-name span{font-size:19px}.case-footer{margin-left:7vw;margin-right:7vw}}
+    @media(max-width:900px){.shoot-grid{grid-template-columns:1fr;gap:34px}.shoot-card{grid-template-columns:minmax(160px,280px) minmax(0,1fr);gap:clamp(24px,5vw,55px)}.shoot-cover{height:400px}}
+    @media(max-width:650px){.case-page{padding:8vw 7vw 16vw}.case-kicker{margin-top:75px}.case-title{margin-bottom:38px}.shoot-card{grid-template-columns:minmax(105px,38%) minmax(0,1fr);gap:20px;padding-bottom:30px}.shoot-cover{height:300px}.shoot-name{font-size:clamp(26px,7vw,38px)}.shoot-name span{font-size:19px}.case-footer{margin-left:7vw;margin-right:7vw}}
   </style>
 </head>
 <body>
